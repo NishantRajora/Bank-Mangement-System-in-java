@@ -1,77 +1,91 @@
-💳 Bank Management System (Java Console Application)
-A console-based banking system written in Java that allows users to securely log in, manage their accounts, perform transactions, and track their fixed deposits. This project demonstrates basic file handling, user authentication, and data manipulation using Java.
+# 💳 Bank Management System (Java Console Application)
 
-🧰 Features
-🔐 User Authentication
-Secure login using username and password
+A **console-based banking system** written in **Java** that allows users to securely log in, manage their accounts, perform transactions, and track fixed deposits.  
+This project demonstrates basic **file handling**, **user authentication**, and **data manipulation** using Java.
 
-Automatic account creation if login fails
+---
 
-Hidden feature: Enter 23220 in the menu after login to manually create a new account
+## 🧰 Features
 
-🧾 Account Management
-View:
+### 🔐 User Authentication
+- Secure login using **username** and **password**  
+- **Automatic account creation** if login fails  
+- **Hidden feature**: Enter `23220` in the menu after login to manually create a new account
 
-Current account balance
+### 🧾 Account Management
+- View:
+  - **Current account balance**
+  - **Fixed deposit balance**
+- **Deposit** and **withdraw** funds
+- **Transfer money** to fixed deposits
+- 💰 **5% interest** automatically applied to current balance upon viewing
 
-Fixed deposit balance
+---
 
-Deposit and withdraw funds
+## 🧑‍💻 Technologies Used
 
-Transfer money to fixed deposits
+| Feature         | Technology         |
+|-----------------|--------------------|
+| Language        | Java               |
+| File Handling   | Java I/O (`java.io`) |
+| Data Storage    | Plain Text (`userdata.txt`) |
+| Utilities       | `ArrayList`, `Scanner` |
 
-💰 5% interest automatically applied to current balance upon viewing
+---
 
-🧑‍💻 Technologies Used
-Feature	Technology
-Language	Java
-File Handling	Java I/O (java.io)
-Data Storage	Plain Text (userdata.txt)
-Utilities	ArrayList, Scanner
+## 📁 Project Structure
 
-📁 Project Structure
-cpp
-Copy
-Edit
+```
+📦 BankManagementSystem/
 ├── BankManagementSystem.java    // Main Java program
 └── userdata.txt                 // User data: username,password,currentBalance,fixedDeposit
-📄 Sample userdata.txt Format
-css
-Copy
-Edit
+```
+
+---
+
+## 📄 Sample `userdata.txt` Format
+
+```
 username,password,currentBalance,fixedDepositBalance
 nishant123,pass@123,5000.0,15000.0
-▶️ How to Run
-🔧 Compile
-bash
-Copy
-Edit
+```
+
+---
+
+## ▶️ How to Run
+
+### 🔧 Compile
+```bash
 javac BankManagementSystem.java
-🚀 Execute
-bash
-Copy
-Edit
+```
+
+### 🚀 Execute
+```bash
 java BankManagementSystem
-🧑‍💻 User Interaction
-Follow on-screen instructions to log in or create an account
+```
 
-Choose from menu options to perform banking operations
+---
 
-Note: Ensure userdata.txt is in the same directory as your .java file.
+## 🧑‍💻 User Interaction
 
-⚠️ Disclaimer
-This project is for educational purposes only
+- Follow on-screen instructions to **log in** or **create an account**
+- Choose from **menu options** to perform banking operations
 
-User data is stored without encryption
+> ⚠️ **Note:** Ensure `userdata.txt` is in the same directory as your `.java` file.
 
-Not intended for real-world banking use
+---
 
-🌱 Future Enhancements
-🔐 Encrypt passwords and sensitive data
+## ⚠️ Disclaimer
 
-🖥️ Add a GUI using JavaFX or Swing
+> This project is for **educational purposes only**.  
+> User data is stored in **plain text** without encryption.  
+> **Not intended** for real-world banking use.
 
-🛠️ Implement Admin login for managing user accounts
+---
 
-🗄️ Switch from text file to MySQL or SQLite database
+## 🌱 Future Enhancements
 
+- 🔐 **Encrypt** passwords and sensitive data
+- 🖥️ Add a **GUI** using JavaFX or Swing
+- 🛠️ Implement **Admin login** for managing user accounts
+- 🗄️ Switch from text file to **MySQL** or **SQLite** database
