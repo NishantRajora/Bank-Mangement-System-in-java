@@ -1,86 +1,70 @@
-# Bank Management System (Console-based Java Project)
+Bank Management System
+Introduction
+The Bank Management System is a console application developed in Java that enables users to manage their banking activities efficiently. It supports user authentication, account management, and various financial transactions, with data stored in a local text file named userdata.txt.
 
-## Overview
+Key Features
+User Authentication:
 
-This is a simple console-based Bank Management System built using Java. The system provides basic banking operations such as user authentication, balance inquiry, withdrawal, deposit, and transferring money to a fixed deposit. User data is stored in a local text file (`userdata.txt`).
+Log in using a username and password.
+Create a new account if the login fails.
+Account Management:
 
-## Features
+View current balance and fixed deposit balance.
+Deposit funds into the account.
+Withdraw funds from the account.
+Transfer funds to a fixed deposit account.
+Interest Calculation: Automatically applies a 5% interest to the current balance when viewed.
 
-* User Authentication
+Technologies
+Programming Language: Java
+File Handling: Java I/O (java.io)
+Data Storage: Plain text file (userdata.txt)
+Utilities: Java Collections (ArrayList, Scanner)
+Project Structure
 
-  * Login with username & password
-  * Create a new account if credentials are invalid
-* Account Management
+Run
+Copy code
+├── BankManagementSystem.java    // Main application code
+└── userdata.txt                 // User data storage in the format: username,password,currentBalance,fixedDeposit
+Example of userdata.txt
+Each line in the file represents a user in the following format:
 
-  * View account info (balance + fixed deposit)
-  * Deposit money
-  * Withdraw money
-  * Transfer money to fixed deposit
-* Interest Calculation
 
-  * Automatically adds 5% interest on balance when viewing
-
-## Technologies Used
-
-* Language: Java
-* File Handling: Java I/O (`java.io`)
-* Data Storage: Plain text file (`userdata.txt`)
-* Utilities: Java Collections (`ArrayList`, `Scanner`)
-
-## File Structure
-
-```
-├── BankManagementSystem.java    // Main Java program
-└── userdata.txt                 // Stores user info in format: username,password,currentBalance,fixedDeposit
-```
-
-## Format of `userdata.txt`
-
-Each line represents one user:
-
-```
+Run
+Copy code
 username,password,currentBalance,fixedDepositBalance
-```
+Sample Entry:
 
-Example:
 
-```
-john123,pass@123,5000.0,15000.0
-```
+Run
+Copy code
+nishant123,pass@123,5000.0,15000.0
+Instructions to Run
+Compile the Program:
 
-## How to Run
+bash
 
-1. Compile the program:
+Run
+Copy code
+javac BankManagementSystem.java
+Execute the Program:
 
-   ```
-   javac BankManagementSystem.java
-   ```
+bash
 
-2. Run the program:
+Run
+Copy code
+java BankManagementSystem
+User Interaction:
 
-   ```
-   java BankManagementSystem
-   ```
+Follow the prompts to log in or create a new account.
+Perform banking operations as guided by the menu.
+Important Considerations
+The userdata.txt file must be in the same directory as the Java file.
+This application is for educational purposes only; it does not encrypt user data and should not be used for real banking.
+Hidden Feature: Enter 23220 in the menu to create a new account after logging in.
 
-3. Follow the prompts on the terminal to:
-
-   * Login or create a new account
-   * Perform banking operations
-
-## Notes
-
-* The `userdata.txt` file must be in the same directory as the `.java` file.
-* Data is not encrypted, and this program is for educational/demo purposes only, not for real-world banking use.
-* Hidden feature: Input `23220` as an option in the menu to create a new account after login.
-
-## Possible Enhancements
-
-* Add encryption for user credentials
-* GUI integration with JavaFX or Swing
-* Admin login to manage accounts
-* Store data using databases (like MySQL)
-
-## Author
-
-**Monika Nahadiya**
-B.Tech in Data Science\\
+Future Enhancements
+Add encryption for user credentials to improve security.
+Develop a graphical user interface (GUI) using JavaFX or Swing.
+Implement an admin login feature for account management.
+Transition to a database system (e.g., MySQL) for data storage.
